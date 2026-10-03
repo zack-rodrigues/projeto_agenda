@@ -1,0 +1,103 @@
+body {
+    background-image: url(imgs/4_yutyty_1231.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+    
+    /* ESSENCIAL: Alinha o #cubo_login perfeitamente no centro da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cubo_login {
+    background: rgba(255, 255, 255, 0.15); /* Efeito vidro */
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Borda sutil de vidro */
+    
+    /* Tamanho controlado e padding menor para não estourar a tela */
+    width: 320px;
+    padding: 40px; 
+    
+    /* Organiza o título e o formulário em coluna */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+#login_title h1 { 
+    margin: 0;
+    text-align: center;
+    font-family: 'Arial Narrow', sans-serif; /* Fonte mais limpa */
+    font-size: 32px;
+    color: #ffffff; /* Branco sólido para dar leitura sobre o roxo */
+}
+
+/* Formulário container */
+#input_user {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Espaçamento entre o bloco de login e o bloco de senha */
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+/* AJUSTE ESSENCIAL: Estrutura que coloca o label acima e CENTRALIZA tudo */
+#input_user .campo {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente o label e o input */
+    gap: 6px; /* Espaçamento entre o texto do label e a caixa de entrada */
+}
+
+#input_user label {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center; /* Garante que o texto do label fique centralizado */
+}
+
+/* Deixa os inputs bonitos, consistentes e centralizados */
+.placeholder {
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    outline: none;
+    font-size: 14px;
+    width: 100%; /* Garante que o input use toda a largura disponível */
+    box-sizing: border-box; /* Evita que o padding aumente o tamanho total do input */
+    text-align: center; /* Centraliza o texto que o usuário digita e o placeholder */
+}
+
+/* Centraliza e estiliza o container do botão */
+#botao_login {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Estilo moderno para o botão de Entrar */
+button {
+    border-radius: 8px;
+    border: none;
+    background-color: #ffffff;
+    color: #4a148c; /* Roxo escuro para contrastar com o botão branco */
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    width: 100%; /* Faz o botão ocupar a largura do card */
+}
+
+/* Efeito ao passar o mouse no botão */
+button:hover {
+    background-color: #f3e5f5;
+    transform: scale(1.02);
+}
